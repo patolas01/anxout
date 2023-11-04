@@ -303,7 +303,7 @@
 
         section#about-us p {
             margin-top: 4%;
-            margin-left: auto;  
+            margin-left: auto;
             margin-right: auto;
             line-height: 250%;
             width: 80svw;
@@ -435,6 +435,17 @@
         @media only screen and (max-width: 1001px) {
             div.coming-soon {
                 font-size: 100%;
+            }
+
+            div.coming-soon button {
+                width: 55svw;
+            }
+
+            section#about-us {
+                margin-top: 40svh;
+                padding-bottom: 15svh;
+                font-size: 90%;
+                line-height: 180%;
             }
 
 
