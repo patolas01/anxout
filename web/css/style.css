@@ -401,7 +401,14 @@
         }
 
         header {
-            display: none;
+            display: inline-flex;
+            justify-content: space-around;
+            width: 100svw;
+        }
+
+        header div{
+            width: 33%;
+            margin: 30%;
         }
 
         div.backTop {
