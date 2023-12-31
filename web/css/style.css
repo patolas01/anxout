@@ -1,7 +1,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap');
 
         body {
-            background-color: #112;
+            --primary-color: #112;
+            --secondary-color: #2b2b55;
+            background-color: var(--primary-color);
             color: #888888;
             font-family: 'Bricolage Grotesque', sans-serif !important;
             /*letter-spacing: small;*/
@@ -50,7 +52,8 @@
 
         form {
             border-radius: 10px;
-            background-color: #2e2e2e;
+            background-color: var(--secondary-color);
+
             width: 250px;
             display: grid;
             place-items: center;
@@ -205,14 +208,15 @@
 
         article h4 {
             /*border-bottom: 1px solid #888888;*/
-            padding-bottom: 5px;
-            padding-top: 10px;
+            padding-bottom: 0.5rem;
+            padding-top: 1rem;
             margin-top: 0;
             margin-bottom: 0;
         }
 
         .descPost {
-            margin-top: 0;
+            margin-top: 0.4rem;
+            text-align: left;
         }
 
         h3 {
@@ -406,7 +410,7 @@
             width: 100svw;
         }
 
-        header div{
+        header div {
             width: 33%;
             margin: 30%;
         }
@@ -429,6 +433,38 @@
             padding-top: 3svh;
             width: 10svh;
         }
+
+        .post-form {
+            width: 100svw;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .new-post{
+            border: 0.4rem solid #3f3f3f80;
+            background-color: var(--secondary-color, 0.5);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -541,14 +577,14 @@
             header {
                 margin: 0;
                 padding: 0;
-                padding-top: 2svh;
-                padding-bottom: 2svh;
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 position: sticky;
                 width: 100svw;
-                height: 5svh;
+                height: 3rem;
                 background-color: #112;
                 border-bottom: 1px #888888 solid;
             }
